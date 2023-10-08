@@ -54,7 +54,10 @@ MESSAGES = {
 
 def show_winner(user_choice, computer_choice):
     if user_choice == computer_choice:
-        print(f"It's a tie! Both users chose '{user_choice.name.lower()}'")
+        if user_choice == 4:
+            print(f"It's a draw! Both players chose {user_choice.name}")
+        else:
+            print(f"It's a draw! Both players chose{user_choice.name.lower()}")
     else:
         # Beats[user_choice] is the list of throws that will trigger a win condition for user
         user_wins = computer_choice in BEATS[user_choice]
