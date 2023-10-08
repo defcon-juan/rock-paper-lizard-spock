@@ -9,6 +9,8 @@ losses = 0
 
 draws = 0
 
+win_rate_percent = 0
+
 
 class Choice(IntEnum):
     Rock = 0
@@ -89,16 +91,16 @@ def show_winner(user_choice, computer_choice):
             verb = MESSAGES[(computer_choice, user_choice)]
             if user_choice == 4:
                 print(
-                    f"\n{computer_choice.name} {verb} {user_choice.name}, you loose!"
+                    f"\n{computer_choice.name} {verb} {user_choice.name}, you lose!"
                 )  # logic for capitalising spocks name
             else:
                 print(
-                    f"\n{computer_choice.name} {verb} {user_choice.name.lower()}, you loose!"
+                    f"\n{computer_choice.name} {verb} {user_choice.name.lower()}, you lose!"
                 )
 
 
 while True:
-    # display the wins losses and draws to the user
+    # display the wins, losses, draws and win rate to the user
     print(
         "\n"
         + str(wins)
@@ -106,7 +108,8 @@ while True:
         + str(losses)
         + "  Losses ||  "
         + str(draws)
-        + "  Draws  \n"
+        + "  Draws ||  "
+        + f"Win rate = {win_rate_percent}%  \n"
     )
     print("Make your throw\n")
     try:
@@ -130,6 +133,9 @@ while True:
             wins += 1
         else:
             losses += 1
+    # calculate win percentage to 2 decimal places
+
+    win_rate_percent = round(((wins / (wins + losses + draws)) * 100), 2)
 
     again = input("\nWant some more? (y/n): ")
     if again.lower() == "n":
