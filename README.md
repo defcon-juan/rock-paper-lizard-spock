@@ -2,6 +2,8 @@
 rock paper lizard spock terminal game
 
 started with the real python tutorial then added extra logic for:
-  Capitalising spocks name every time
-  Keeping track of wins, losses and draws
+
+1. Capitalising spocks name every time
+
+2. Keeping track of wins, losses and draws
 
