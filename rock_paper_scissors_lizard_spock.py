@@ -55,7 +55,9 @@ MESSAGES = {
 def show_winner(user_choice, computer_choice):
     if user_choice == computer_choice:
         if user_choice == 4:
-            print(f"It's a draw! Both players chose {user_choice.name}")
+            print(
+                f"It's a draw! Both players chose {user_choice.name}"
+            )  # logic for capitalising spocks name
         else:
             print(f"It's a draw! Both players chose{user_choice.name.lower()}")
     else:
@@ -65,7 +67,9 @@ def show_winner(user_choice, computer_choice):
         if user_wins:
             verb = MESSAGES[(user_choice, computer_choice)]
             if computer_choice == 4:
-                print(f"{user_choice.name} {verb} {computer_choice.name}, you win!")
+                print(
+                    f"{user_choice.name} {verb} {computer_choice.name}, you win!"
+                )  # logic for capitalising spocks name
             else:
                 print(
                     f"{user_choice.name} {verb} {computer_choice.name.lower()}, you win!"
@@ -74,7 +78,9 @@ def show_winner(user_choice, computer_choice):
         else:
             verb = MESSAGES[(computer_choice, user_choice)]
             if user_choice == 4:
-                print(f"{computer_choice.name} {verb} {user_choice.name}, you loose!")
+                print(
+                    f"{computer_choice.name} {verb} {user_choice.name}, you loose!"
+                )  # logic for capitalising spocks name
             else:
                 print(
                     f"{computer_choice.name} {verb} {user_choice.name.lower()}, you loose!"
