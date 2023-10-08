@@ -7,3 +7,4 @@ started with the real python tutorial then added extra logic for:
 
 2. Keeping track of wins, losses and draws
 
+3. Added logic to show win rate
