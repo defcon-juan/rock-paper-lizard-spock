@@ -1,5 +1,5 @@
 # rpsls
-rock paper lizard spock terminal game
+rock paper scissors lizard spock terminal game
 
 started with the real python tutorial then added extra logic for:
 
