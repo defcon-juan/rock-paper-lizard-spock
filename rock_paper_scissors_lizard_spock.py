@@ -65,7 +65,7 @@ def show_winner(user_choice, computer_choice):
         if user_choice == 4:
             print(
                 f"\nIt's a draw! Both players chose {user_choice.name}"
-            )  # logic for capitalising spocks name
+            )  # logic for capitalising Spock's name
 
         else:
             print(f"\nIt's a draw! Both players chose {user_choice.name.lower()}")
@@ -81,7 +81,7 @@ def show_winner(user_choice, computer_choice):
             if computer_choice == 4:
                 print(
                     f"\n{user_choice.name} {verb} {computer_choice.name}, you win!"
-                )  # logic for capitalising spocks name
+                )  # logic for capitalising Spock's name
             else:
                 print(
                     f"\n{user_choice.name} {verb} {computer_choice.name.lower()}, you win!"
@@ -137,10 +137,10 @@ while True:
 
     win_rate_percent = round(((wins / (wins + losses + draws)) * 100), 2)
 
-    again = input("\nWant some more? (y/n): ")
+    again = input("\nWant to try your luck again? (y/n): ")
     if again.lower() == "n":
         break
 
     print()
 
-print("\nGoodbye and thanks for playing!!\n")
+print("\nGoodbye! Thanks for playing!\n")
