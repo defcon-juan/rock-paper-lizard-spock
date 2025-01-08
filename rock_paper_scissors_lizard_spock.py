@@ -149,4 +149,15 @@ while True:
 
     print()
 
-print("\nGoodbye! Thanks for playing!\n")
+print(
+    "\nGoodbye! Thanks for playing!  FInal scores are:\n"
+    + str(wins)
+    + "  Wins ||  "
+    + str(losses)
+    + "  Losses ||  "
+    + str(draws)
+    + "  Draws ||  "
+    + f"Win rate = {win_rate_percent}%  \n"
+)
+
+# add message showing final scores of the player!!
