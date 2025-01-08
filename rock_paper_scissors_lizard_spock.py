@@ -92,7 +92,7 @@ def show_winner(user_choice, computer_choice):
             if user_choice == 4:
                 print(
                     f"\n{computer_choice.name} {verb} {user_choice.name}, you lose!"
-                )  # logic for capitalising spocks name
+                )  # logic for capitalising spock's name
             else:
                 print(
                     f"\n{computer_choice.name} {verb} {user_choice.name.lower()}, you lose!"
