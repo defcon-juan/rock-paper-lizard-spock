@@ -1,5 +1,5 @@
 # rock_paper_scissors_lizard_spock.py
-
+import os
 import random
 from enum import IntEnum
 
@@ -159,5 +159,6 @@ print(
     + "  Draws ||  "
     + f"Win rate = {win_rate_percent}%  \n"
 )
+os.system("pause")
 
 # add message showing final scores of the player!!
