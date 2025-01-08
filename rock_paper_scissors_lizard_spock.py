@@ -150,7 +150,7 @@ while True:
     print()
 
 print(
-    "\nGoodbye! Thanks for playing!  FInal scores are:\n"
+    "\nGoodbye! Thanks for playing!  Final scores are:\n"
     + str(wins)
     + "  Wins ||  "
     + str(losses)
