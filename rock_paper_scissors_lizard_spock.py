@@ -63,25 +63,28 @@ MESSAGES = {
 def show_winner(user_choice, computer_choice):
     if user_choice == computer_choice:
         if user_choice == 4:
-            print(
-                f"\nIt's a draw! Both players chose {user_choice.name}"
-            )  # logic for capitalising Spock's name
+            print(f"\nIt's a draw! Both players chose {user_choice.name}")
+
+            # logic for capitalising Spock's name
 
         else:
             print(f"\nIt's a draw! Both players chose {user_choice.name.lower()}")
 
     else:
         # If the computer choice is a value based on the user_choice key, the user wins
+
         user_wins = computer_choice in BEATS[user_choice]
 
         if user_wins:
+
             # access the messages dictionary with the tuple of user choice and computer choice as a key
             # the value of that key is then used as the verb in the message to the user
+
             verb = MESSAGES[(user_choice, computer_choice)]
             if computer_choice == 4:
-                print(
-                    f"\n{user_choice.name} {verb} {computer_choice.name}, you win!"
-                )  # logic for capitalising Spock's name
+                print(f"\n{user_choice.name} {verb} {computer_choice.name}, you win!")
+
+                # logic for capitalising Spock's name
             else:
                 print(
                     f"\n{user_choice.name} {verb} {computer_choice.name.lower()}, you win!"
@@ -90,9 +93,9 @@ def show_winner(user_choice, computer_choice):
         else:
             verb = MESSAGES[(computer_choice, user_choice)]
             if user_choice == 4:
-                print(
-                    f"\n{computer_choice.name} {verb} {user_choice.name}, you lose!"
-                )  # logic for capitalising spock's name
+                print(f"\n{computer_choice.name} {verb} {user_choice.name}, you lose!")
+
+                # logic for capitalising spock's name
             else:
                 print(
                     f"\n{computer_choice.name} {verb} {user_choice.name.lower()}, you lose!"
@@ -100,7 +103,9 @@ def show_winner(user_choice, computer_choice):
 
 
 while True:
+
     # display the wins, losses, draws and win rate to the user
+
     print(
         "\n"
         + str(wins)
@@ -133,6 +138,7 @@ while True:
             wins += 1
         else:
             losses += 1
+
     # calculate win percentage to 2 decimal places
 
     win_rate_percent = round(((wins / (wins + losses + draws)) * 100), 2)
