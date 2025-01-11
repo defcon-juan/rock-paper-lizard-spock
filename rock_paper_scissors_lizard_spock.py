@@ -149,8 +149,10 @@ while True:
 
     print()
 
+# add message showing final scores of the player!!
+
 print(
-    "\nGoodbye! Thanks for playing!  Final scores are:\n"
+    "\nGoodbye! Thanks for playing!  The final scores are:\n"
     + str(wins)
     + "  Wins ||  "
     + str(losses)
@@ -160,5 +162,3 @@ print(
     + f"Win rate = {win_rate_percent}%  \n"
 )
 os.system("pause")
-
-# add message showing final scores of the player!!
