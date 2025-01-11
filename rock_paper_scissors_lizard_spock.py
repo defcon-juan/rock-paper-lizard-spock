@@ -143,7 +143,7 @@ while True:
 
     win_rate_percent = round(((wins / (wins + losses + draws)) * 100), 2)
 
-    again = input("\nWant to try your luck again? (y/n): ")
+    again = input("\nHit n to quit or press any other key to try your luck again!: ")
     if again.lower() == "n":
         break
 
